@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig", // EditorConfig for VS Code
+    "esbenp.prettier-vscode", // Prettier for code style
+    "dbaeumer.vscode-eslint", // eslint
+    "msjsdiag.debugger-for-chrome", // Debugger for Chrome
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
