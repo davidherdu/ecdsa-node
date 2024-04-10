@@ -4,6 +4,7 @@ function Wallet({ address, setAddress, balance, setBalance }) {
   async function onChange(evt) {
     const address = evt.target.value;
     setAddress(address);
+
     if (address) {
       const {
         data: { balance },
@@ -16,11 +17,15 @@ function Wallet({ address, setAddress, balance, setBalance }) {
 
   return (
     <div className="container wallet">
-      <h1>Your Wallet</h1>
+      <h1>Pick your wallet</h1>
 
       <label>
-        Wallet Address
-        <input placeholder="Type an address, for example: 0x1" value={address} onChange={onChange}></input>
+        Wallet address (paste one of the addresses in Test balances):
+        <input
+          placeholder="Wallet address"
+          value={address}
+          onChange={onChange}
+        />
       </label>
 
       <div className="balance">Balance: {balance}</div>
